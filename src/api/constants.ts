@@ -10,7 +10,7 @@
 // export const BASE_URL = "http://127.0.0.1:3000/";
 
 // Local development (network IP - use when running on different device)
-export const BASE_URL = '/';
+export const BASE_URL = import.meta.env.VITE_API_URL || '/';
 
 // Production server examples:
 // export const BASE_URL = "http://13.48.181.148:8080/";
