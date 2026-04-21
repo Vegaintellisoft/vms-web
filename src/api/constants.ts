@@ -10,7 +10,7 @@
 // export const BASE_URL = "http://127.0.0.1:3000/";
 
 // Local development (network IP - use when running on different device)
-export const BASE_URL = "http://16.171.170.23:3000";
+export const BASE_URL = "";
 // hello
 // Production server examples:
 // export const BASE_URL = "http://13.48.181.148:8080/";
@@ -23,29 +23,29 @@ export const BASE_URL = "http://16.171.170.23:3000";
 export const API_ENDPOINTS = {
   // Public Dropdown Endpoints (No authentication required)
   // Used for visitor self-service check-in kiosk
-  GET_COMPANIES: "api/v1/public/dropdowns/companies",
-  GET_DEPARTMENTS: "api/v1/public/dropdowns/departments",
-  GET_DESIGNATIONS: "api/v1/public/dropdowns/designations",
-  GET_EMPLOYEES: "api/v1/public/dropdowns/employees",
-  GET_ALL_EMPLOYEES_PUBLIC: "api/v1/public/dropdowns/all-employees",
-  GET_PURPOSES: "api/v1/public/dropdowns/purposes",
+  GET_COMPANIES: "http://16.171.170.23:3000/api/v1/public/dropdowns/companies",
+  GET_DEPARTMENTS: "http://16.171.170.23:3000/api/v1/public/dropdowns/departments",
+  GET_DESIGNATIONS: "http://16.171.170.23:3000/api/v1/public/dropdowns/designations",
+  GET_EMPLOYEES: "http://16.171.170.23:3000/api/v1/public/dropdowns/employees",
+  GET_ALL_EMPLOYEES_PUBLIC: "http://16.171.170.23:3000/api/v1/public/dropdowns/all-employees",
+  GET_PURPOSES: "http://16.171.170.23:3000/api/v1/public/dropdowns/purposes",
 
   // Visitor Endpoints
-  SEND_OTP: "api/v1/visitors/send-otp",
-  VERIFY_OTP: "api/v1/visitors/verify-otp",
-  VISITOR_DATA: "api/v1/visitors/submit-details",
-  GET_CARD_DETAILS: "api/v1/visitors/gen_card",
-  VERIFY_STATUS: "api/v1/visitors/verify-details", // Check visitor approval status
+  SEND_OTP: "http://16.171.170.23:3000/api/v1/visitors/send-otp",
+  VERIFY_OTP: "http://16.171.170.23:3000/api/v1/visitors/verify-otp",
+  VISITOR_DATA: "http://16.171.170.23:3000/api/v1/visitors/submit-details",
+  GET_CARD_DETAILS: "http://16.171.170.23:3000/api/v1/visitors/gen_card",
+  VERIFY_STATUS: "http://16.171.170.23:3000/api/v1/visitors/verify-details", // Check visitor approval status
 
   // Appointment Endpoints
-  APPOINTMENT_SEND_OTP: "api/v1/public/appointments/send-otp",
-  APPOINTMENT_VERIFY_OTP: "api/v1/public/appointments/verify-otp",
+  APPOINTMENT_SEND_OTP: "http://16.171.170.23:3000/api/v1/public/appointments/send-otp",
+  APPOINTMENT_VERIFY_OTP: "http://16.171.170.23:3000/api/v1/public/appointments/verify-otp",
 
   // QR Scan Endpoints
-  QR_SCAN: "api/v1/visitors/qr-scan",
+  QR_SCAN: "http://16.171.170.23:3000/api/v1/visitors/qr-scan",
 
   // Security/Auth Endpoints
-  SECURITY_LOGIN: "api/v1/auth/login",
+  SECURITY_LOGIN: "http://16.171.170.23:3000/api/v1/auth/login",
 } as const;
 
 // ============================================================
